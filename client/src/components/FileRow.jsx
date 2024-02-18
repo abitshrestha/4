@@ -3,7 +3,7 @@ import {FaTrash} from 'react-icons/fa';
 
 const FileRow = ({file,index}) => {
     const view=(fileName)=>{
-        window.open(`http://localhost:8080/files/${fileName}`);
+        window.open(`https://4-77hc.vercel.app//files/${fileName}`);
     };
   return (
     <tr>

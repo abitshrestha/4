@@ -15,14 +15,14 @@ const AddCourseFileModal = () => {
         formData.append("file",file);
         formData.append('courseId',id);
         try {
-           await axios.post('http://localhost:8080/upload-file',formData);
+           await axios.post('https://4-77hc.vercel.app//upload-file',formData);
         } catch (error) {
             console.log(error);
         }
     }
     const getFile=async()=>{
         try {
-            const {data}=await axios.get(`http://localhost:8080/get-file/${id}`);
+            const {data}=await axios.get(`https://4-77hc.vercel.app//get-file/${id}`);
             setData(data);
         } catch (error) {
             console.log(error);
