@@ -20,7 +20,8 @@ connectDB();
 app.use(express.json());
 
 app.use(cors({
-  origin: 'https://4-wh8h.vercel.app'
+  origin: 'https://4-wh8h.vercel.app',
+  optionsSuccessStatus: 200,
 }));
 app.use('/files', express.static(join(__dirname, 'files')));
 app.use('/graphql',graphqlHTTP({
