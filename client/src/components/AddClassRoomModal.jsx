@@ -16,9 +16,9 @@ const AddClassRoomModal = () => {
         if (name === '') {
             return alert('Please fill in the form');
         }
+        window.location.reload();
         addClassRoom(name);
         setName('');
-        window.location.reload();
     }
     return (
         <>
