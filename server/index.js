@@ -20,7 +20,7 @@ connectDB();
 app.use(express.json());
 app.use(cors(
     {
-        origin:"*"
+        origin:"http://localhost:3000"
     }
 ));
 app.use('/files', express.static(join(__dirname, 'files')));
