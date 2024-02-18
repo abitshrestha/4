@@ -15,14 +15,14 @@ const AddCourseFileModal = () => {
         formData.append("file",file);
         formData.append('courseId',id);
         try {
-           await axios.post('https://back-omega-nine.vercel.app/upload-file',formData);
+           await axios.post('https://ff-w6uk.onrender.com/upload-file',formData);
         } catch (error) {
             console.log(error);
         }
     }
     const getFile=async()=>{
         try {
-            const {data}=await axios.get(`https://back-omega-nine.vercel.app/get-file/${id}`);
+            const {data}=await axios.get(`https://ff-w6uk.onrender.com/get-file/${id}`);
             setData(data);
         } catch (error) {
             console.log(error);

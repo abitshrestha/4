@@ -3,7 +3,7 @@ import {FaTrash} from 'react-icons/fa';
 
 const FileRow = ({file,index}) => {
     const view=(fileName)=>{
-        window.open(`https://back-omega-nine.vercel.app/files/${fileName}`);
+        window.open(`https://ff-w6uk.onrender.com/files/${fileName}`);
     };
   return (
     <tr>

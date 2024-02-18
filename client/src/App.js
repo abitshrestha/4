@@ -6,7 +6,7 @@ import ClassRoom from "./pages/ClassRoom";
 import Course from "./pages/Course";
 
 const client = new ApolloClient({
-  uri: 'https://back-omega-nine.vercel.app/graphql',
+  uri: 'https://ff-w6uk.onrender.com/graphql',
   cache: new InMemoryCache(),
 });
 
