@@ -18,6 +18,7 @@ const AddClassRoomModal = () => {
         }
         addClassRoom(name);
         setName('');
+        window.location.reload();
     }
     return (
         <>

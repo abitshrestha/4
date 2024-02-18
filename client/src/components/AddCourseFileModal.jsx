@@ -16,6 +16,7 @@ const AddCourseFileModal = () => {
         formData.append('courseId',id);
         try {
            await axios.post('https://ff-w6uk.onrender.com/upload-file',formData);
+           window.location.reload();
         } catch (error) {
             console.log(error);
         }
