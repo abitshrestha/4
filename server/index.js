@@ -19,9 +19,6 @@ connectDB();
 
 app.use(express.json());
 
-app.use(cors({
-  origin: 'https://4-wh8h.vercel.app',
-}));
 app.use((req, res, next) => {
       res.setHeader("Access-Control-Allow-Origin", "*");
       res.setHeader(
