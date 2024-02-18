@@ -6,7 +6,7 @@ import ClassRoom from "./pages/ClassRoom";
 import Course from "./pages/Course";
 
 const client = new ApolloClient({
-  uri: 'https://4-77hc.vercel.app//graphql',
+  uri: 'https://4-alpha-sage.vercel.app/graphql',
   cache: new InMemoryCache(),
 });
 
