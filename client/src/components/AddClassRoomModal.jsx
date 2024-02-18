@@ -17,8 +17,8 @@ const AddClassRoomModal = () => {
             return alert('Please fill in the form');
         }
         addClassRoom(name);
-        setName('');
         window.location.reload();
+        setName('');
     }
     return (
         <>
