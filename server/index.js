@@ -24,6 +24,9 @@ app.use('/graphql',graphqlHTTP({
     schema,
     graphiql:process.env.NODE_ENV='development',
 }));
+app.get('/',(req,res)=>{
+    res.send('hello world!');
+})
 
 app.post('/upload-file',upload.single('file'),async(req,res)=>{
     const fileName=req.file.filename;
