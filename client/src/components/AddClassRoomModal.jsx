@@ -11,13 +11,13 @@ const AddClassRoomModal = () => {
         variables: { name},
     })
 
-    const onSubmit = (e) => {
+    const onSubmit = async (e) => {
         e.preventDefault();
         if (name === '') {
             return alert('Please fill in the form');
         }
-        addClassRoom(name);
-        // window.location.reload();
+        await addClassRoom(name);
+        window.location.reload();
         setName('');
     }
     return (
